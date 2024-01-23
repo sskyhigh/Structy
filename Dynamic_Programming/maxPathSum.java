@@ -9,7 +9,7 @@ public class maxPathSum {
                 List.of(1, 3, 12),
                 List.of(5, 1, 1),
                 List.of(3, 6, 1));
-        System.out.println(mathSum(grid));
+        System.out.println(mathSum(grid)); // return 18
     }
 
     public static int mathSum(List<List<Integer>> grid) {
