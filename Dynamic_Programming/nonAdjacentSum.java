@@ -9,7 +9,7 @@ public class nonAdjacentSum {
     }
 
     public static int nonAdjacentSum(List<Integer> nums) {
-        return nonAdjacentSum(nums, 0, new HashMap<>());
+        return nonAdjacentSum(nums, 0, new HashMap<>()); 
     }
 
     public static int nonAdjacentSum(List<Integer> nums, int i, HashMap<Integer, Integer> memo) {
