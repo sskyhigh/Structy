@@ -3,6 +3,7 @@ package Arrays;
 public class uncompress {
     public static void main(String[] args) {
         System.out.println("Hello world");
+        System.out.println(uncompress("2c3a1t"));
     }
 
     public static String uncompress(String s) {
