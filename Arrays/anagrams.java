@@ -13,6 +13,7 @@ public class anagrams {
         for (char c : s.toCharArray()) {
             // if key does not exist
             if (count.get(c) == null) {
+                // initialize the value to 0
                 count.put(c, 0);
             }
             count.put(c, count.get(c) + 1);
