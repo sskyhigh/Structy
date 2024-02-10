@@ -8,6 +8,7 @@ public class compress {
 
     public static String compress(String s) {
         //String letters = "abcdefghijklmnopqrstuvwxyz";
+        s += '!'; 
         String result = "";
         int i = 0, j = 0;
         while (j < s.length()) {
