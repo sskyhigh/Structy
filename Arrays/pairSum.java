@@ -26,14 +26,16 @@ public class pairSum {
     }
 
     public static List<Integer> twiceSum(List<Integer> numbers, int target) {
-        HashMap<Integer, Integer> previousNumbers = new HashMap<>();
+        HashMap<Integer, Integer> previous = new HashMap<>();
         for (int i = 0; i < numbers.size(); ++i) {
-            int num = numbers.get(i);
-            int complement = target - num;
-            if(previousNumbers.containsKey(complement)){
-                return List.of(i, previousNumbers.get(complement));
+            int nums = numbers.get(i);
+            int complement = target - nums;
+            // subtract the value, and if the value
+            // is inside the hashmap, just return
+            if (previous.containsKey(complement)) {
+                return List.of(i, previous.get(complement));
             }
-            previousNumbers.put(num, i);
+            previous.put(nums, i);
         }
         return null;
     }
