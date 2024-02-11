@@ -1,6 +1,7 @@
 package LinkedList;
 
 import java.util.*;
+
 // recursive 
 class Node<T> {
     T val;
@@ -25,8 +26,8 @@ public class listValues {
         System.out.println(linkedListValues(a));
     }
 
-    public static void linkedListValues(Node<String> head, List<String> values){
-        if(head == null){
+    public static void linkedListValues(Node<String> head, List<String> values) {
+        if (head == null) {
             return;
         }
         values.add(head.val);
@@ -34,8 +35,8 @@ public class listValues {
     }
 
     public static List<String> linkedListValues(Node<String> head) {
-        List<String> values = new ArrayList<>(); 
+        List<String> values = new ArrayList<>();
         linkedListValues(head, values);
-        return values; 
+        return values;
     }
 }
