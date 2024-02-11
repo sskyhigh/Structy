@@ -26,17 +26,17 @@ public class listValues {
         System.out.println(linkedListValues(a));
     }
 
-    public static void linkedListValues(Node<String> head, List<String> values) {
-        if (head == null) {
-            return;
+    public static void linkedListValues(Node<String> head, List<String> values){
+        // checking to see if head is null
+        if(head==null){
+            return; 
         }
         values.add(head.val);
         linkedListValues(head.next, values);
     }
-
-    public static List<String> linkedListValues(Node<String> head) {
-        List<String> values = new ArrayList<>();
+    public static List<String> linkedListValues(Node<String> head){
+        List<String> values = new ArrayList<>(); 
         linkedListValues(head, values);
-        return values;
+        return values;  
     }
 }
