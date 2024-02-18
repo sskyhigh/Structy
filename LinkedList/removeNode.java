@@ -24,7 +24,7 @@ public class removeNode {
     public static <T> Node<T> removeNode(Node<T> head, T targetVal) {
         Node<T> prev = null, current = head;
         // if the target is at the start
-        if (targetVal == head.val) {
+        if (targetVal == head.val) { 
             return head.next;
         }
         while (current != null) {
