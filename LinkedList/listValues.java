@@ -11,9 +11,10 @@ class Node<T> {
         this.val = val;
         this.next = null;
     }
+
     @Override
-    public String toString(){
-        return val.toString(); 
+    public String toString() {
+        return val.toString();
     }
 }
 
@@ -30,17 +31,18 @@ public class listValues {
         System.out.println(linkedListValues(a));
     }
 
-    public static void linkedListValues(Node<String> head, List<String> values){
+    public static void linkedListValues(Node<String> head, List<String> values) {
         // checking to see if head is null
-        if(head==null){
-            return; 
+        if (head == null) {
+            return;
         }
         values.add(head.val);
         linkedListValues(head.next, values);
     }
-    public static List<String> linkedListValues(Node<String> head){
-        List<String> values = new ArrayList<>(); 
+
+    public static List<String> linkedListValues(Node<String> head) {
+        List<String> values = new ArrayList<>();
         linkedListValues(head, values);
-        return values;  
+        return values;
     }
 }
