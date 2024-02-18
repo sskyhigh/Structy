@@ -21,4 +21,11 @@ public class insUnivalue {
         }
         return true;
     }
+    public static <T> void printList(Node<T> head){
+		Node<T> temp = head; 
+		while(temp!=null){
+			System.out.print(temp + " ");
+			temp = temp.next; 
+		}
+	}
 }
