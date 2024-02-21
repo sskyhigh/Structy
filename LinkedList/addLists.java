@@ -14,7 +14,7 @@ public class addLists {
         Node<Integer> b2 = new Node<>(4);
         b1.next = b2;
         // 7 -> 4
-        System.out.println(addLists(a1, b1));
+        printList(addLists(a1, b1));
     }
 
     public static Node<Integer> addLists(Node<Integer> head1, Node<Integer> head2) {
@@ -36,4 +36,11 @@ public class addLists {
         newNode.next = addLists(next1, next2, nextCarry);
         return newNode;
     }
+    public static <T> void printList(Node<T> head){
+		Node<T> temp = head; 
+		while(temp!=null){
+			System.out.print(temp + " ");
+			temp = temp.next; 
+		}
+	}
 }
