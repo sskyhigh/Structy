@@ -7,7 +7,7 @@ public class addLists {
     public static void main(String[] args) {
         Node<Integer> a1 = new Node<>(9);
         Node<Integer> a2 = new Node<>(8);
-        a1.next = a2; 
+        a1.next = a2;  
         // 9 -> 8
 
         Node<Integer> b1 = new Node<>(7);
