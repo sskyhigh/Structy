@@ -29,7 +29,9 @@ public class addLists {
         int value2 = head2 == null ? 0 : head2.val;
         int sum = value1 + value2;
         Node<Integer> newNode = new Node<>(sum);
-        newNode.next = addLists(head1.next, head2.next, carry);
+        Node<Integer> next1 = head1 == null ? null : head1.next;
+        Node<Integer> next2 = head2 == null ? null : head2.next;
+        newNode.next = addLists(next1, next2, carry);
         return newNode;
     }
 
