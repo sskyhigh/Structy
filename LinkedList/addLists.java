@@ -40,7 +40,7 @@ public class addLists {
 		Node<T> temp = head; 
 		while(temp!=null){
 			System.out.print(temp + " ");
-			temp = temp.next; 
+			temp = temp.next;  
 		}
 	}
 }
