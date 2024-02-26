@@ -22,16 +22,18 @@ public class addLists {
     }
 
     public static Node<Integer> addLists(Node<Integer> head1, Node<Integer> head2, int carry) {
-        if (head1 == null && head2 == null) {
+        if (head1 == null && head2 == null && carry==0) {
             return null;
         }
         int value1 = head1 == null ? 0 : head1.val;
         int value2 = head2 == null ? 0 : head2.val;
-        int sum = value1 + value2;
-        Node<Integer> newNode = new Node<>(sum);
+        int sum = value1 + value2 + carry;
+        int nextCarry = sum >= 10 ? 1 : 0;
+        int digit = sum % 10; 
+        Node<Integer> newNode = new Node<>(digit);
         Node<Integer> next1 = head1 == null ? null : head1.next;
         Node<Integer> next2 = head2 == null ? null : head2.next;
-        newNode.next = addLists(next1, next2, carry);
+        newNode.next = addLists(next1, next2, nextCarry);
         return newNode;
     }
 
