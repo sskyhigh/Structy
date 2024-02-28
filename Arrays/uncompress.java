@@ -7,7 +7,7 @@ public class uncompress {
     }
 
     public static String uncompress(String s) {
-        // reference string to check if there is a number
+        // reference string to check if there is a number 
         String numbers = "0123456789";
         String result = "";
         int i = 0, j = 0;
