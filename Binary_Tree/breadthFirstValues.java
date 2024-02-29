@@ -22,6 +22,7 @@ public class breadthFirstValues {
 		System.out.println(breadthFirstValues(a));
     }
     public static List<String> breadthFirstValues(Node<String> root){
+        if(root==null) return List.of(); 
         List<String> results = new ArrayList<>(); 
         Queue<Node<String>> queue = new ArrayDeque<>(); 
         queue.add(root);
