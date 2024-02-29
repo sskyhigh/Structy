@@ -18,6 +18,7 @@ public class createLinkedList {
         newNode.next = createLinkedList(values, index+1);
         return newNode; 
     }
+    // for debugging
     public static <T> void printList(Node<T> head){
 		Node<T> temp = head; 
 		while(temp!=null){
