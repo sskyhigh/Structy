@@ -10,6 +10,6 @@ public class treePathFinder {
         if(root==null){
             return null; 
         }
-        return list;
+        return null;
     }
 }
