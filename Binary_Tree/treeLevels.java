@@ -30,14 +30,13 @@ public class treeLevels {
         if (root == null)
             return;
         if (index == levels.size()) {
-            List<T> list = new ArrayList<>();
-            list.add(root.val);
-            levels.add(list);
+            List<T> newLevel = new ArrayList<>();
+            newLevel.add(root.val);
+            levels.add(newLevel);
         } else {
             levels.get(index).add(root.val);
         }
         treeLevels(root.left, index + 1, levels);
         treeLevels(root.right, index + 1, levels);
     }
-
 }
