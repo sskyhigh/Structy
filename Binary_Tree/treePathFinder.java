@@ -2,6 +2,7 @@ package Binary_Tree;
 import java.util.*; 
 
 public class treePathFinder {
+    //recursion
     public static void main(String[] args) {
         Node<String> a = new Node<>("a");
 		Node<String> b = new Node<>("b");
