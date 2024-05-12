@@ -27,20 +27,20 @@ public class maxPathSum {
         if (row == grid.size() - 1 && col == grid.get(0).size() - 1) {
             return grid.get(row).get(col);
         }
-        
+
         List<Integer> pos = List.of(row, col);
         if (memo.containsKey(pos)) {
             return memo.get(pos);
         }
-        
-        int down = mathSum(row+1, col, grid, memo);
-        int right = mathSum(row, col+1, grid, memo);
+
+        int down = mathSum(row + 1, col, grid, memo);
+        int right = mathSum(row, col + 1, grid, memo);
 
         sum = grid.get(row).get(col) + Math.max(down, right);
 
         memo.put(pos, sum);
         // go down
-        
+
         return sum;
     }
 }
